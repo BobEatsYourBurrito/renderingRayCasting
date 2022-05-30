@@ -25,7 +25,7 @@ class Player{
 
   }
   
-  move(amt) {
+  moveHorizontal(amt) {
     const vel = p5.Vector.fromAngle(this.heading + randians(90));
     vel.setMag(amt);
     this.pos.add(vel);
