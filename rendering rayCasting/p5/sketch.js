@@ -20,9 +20,9 @@ function keyPressed() {
 }
 
 function draw() {
-    if(keyIsDown(65)) {
+    if(keyIsDown(LEFT_ARROW)) {
       player.rotate(-0.03);
-    } else if (keyIsDown(68)) {
+    } else if (keyIsDown(RIGHT_ARROW)) {
       player.rotate(0.03);
     } else if (keyIsDown(87)) {
       player.move(1);
