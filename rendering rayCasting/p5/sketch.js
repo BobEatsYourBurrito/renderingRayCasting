@@ -27,8 +27,12 @@ function draw() {
     } else if (keyIsDown(87)) {
       player.move(1);
     } else if (keyIsDown(83)) {
-        player.move(-1);
-      }
+      player.move(-1);
+    } else if (keyIsDown(65)) {
+      player.moveHorizontal(-1);    
+    } else if (keyIsDown(68)) {
+      player.moveHorizontal(1);    
+    }
 
   background(0);
 
